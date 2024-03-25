@@ -1,0 +1,6 @@
+# volker-schuhmacher.net/
+
+User-agent: *
+Disallow: /datenschutz.html
+
+Sitemap: http://volker-schuhmacher.net/sitemap.xml
