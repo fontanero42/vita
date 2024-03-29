@@ -235,7 +235,7 @@ ul {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url(noun-scrum-6036584.svg);
+  background-image: url(noun-scrum-603658.svg);
   background-repeat: no-repeat;
   background-position: 25% 50% ;
   height: 35rem;
@@ -320,7 +320,7 @@ h4{
 /* footer navigation */
 
 .footer-nav {
-  columns: 2;
+  columns: 4;
   gap: clamp(var(--size-200), 30vw, var(--size-900));
 }
 

@@ -3,4 +3,4 @@
 User-agent: *
 Disallow: /datenschutz.html
 
-Sitemap: http://volker-schuhmacher.net/sitemap.xml
+Sitemap: https://volker-schuhmacher.net/sitemap.xml
