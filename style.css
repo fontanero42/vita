@@ -235,28 +235,29 @@ ul {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url(noun-scrum-603658.svg);
+  background-image: url(scrum.svg);
   background-repeat: no-repeat;
-  background-position: 25% 50% ;
-  height: 35rem;
-  opacity:  0.05;
+  background-position: 15% 100% ;
+  background-size: 40%;
+  height: 25rem;
+  opacity:  0.1;
 }
 .blob-2::before {
   content: "";
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url(noun-mindset-4592956.svg);
+  background-image: url(mindset.svg);
   background-repeat: no-repeat;
   background-position-x: 75%;
   background-position-y:top;
-  height: 20rem;
-  opacity:  0.05;
+  background-size: 20%;
+  opacity:  0.1;
 }
 
 .even-columns {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media (min-width: 50em) {
