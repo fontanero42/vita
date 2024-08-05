@@ -230,6 +230,9 @@ svg {
 .padding-block-400 {
   padding-block: var(--size-400);
 }
+.padding-bottom-400 {
+  padding-bottom: var(--size-400);
+}
 
 .margin-bottom-700 {
   margin-block-end: var(--size-700);
