@@ -343,8 +343,8 @@ h4{
   display: grid;
   gap: var(--size-400);
   grid-template-areas:
-    "nav"
-    "copy"
+    "nav  nav"
+    "copy social";
 }
 
 .primary-footer-nav {
@@ -355,8 +355,16 @@ h4{
   grid-area: copy;
   display: flex;
   align-content: flex-end;
+  align-items:baseline;
 }
 
+.primary-footer-social {
+  grid-area: social;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:baseline;
+  /* gap: var(--size-700);*/
+}
 
 
 @media (max-width: 50em) {
@@ -379,4 +387,15 @@ h4{
 
 .footer-nav a:is(:hover, :focus) {
   color: var(--clr-accent-400);
+}
+
+.primary-footer-social a:is(:hover, :focus) {
+ background-color: var(--clr-accent-400);
+}
+
+@media (max-width: 50em) {
+  .footer-nav   {
+    columns: 1;
+  }
+  
 }
