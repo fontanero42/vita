@@ -363,7 +363,6 @@ h4{
   display: flex;
   flex-direction: row-reverse;
   align-items:baseline;
-  /* gap: var(--size-700);*/
 }
 
 
