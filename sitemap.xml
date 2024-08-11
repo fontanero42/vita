@@ -3,21 +3,21 @@
 	<url>
 		<loc>https://volker-schuhmacher.net</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-08-09</lastmod>
-	</url>
-	<url>
-		<loc>https://volker-schuhmacher.net/credits.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-04-05</lastmod>
-	</url>
-	<url>
-		<loc>https://volker-schuhmacher.net/datenschutz.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-04-05</lastmod>
+		<lastmod>2024-08-05</lastmod>
 	</url>
 	<url>
 		<loc>https://volker-schuhmacher.net/impressum.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-04-05</lastmod>
+		<lastmod>2024-08-11</lastmod>
+	</url>
+	<url>
+		<loc>https://volker-schuhmacher.net/datenschutz.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-08-11</lastmod>
+	</url>
+	<url>
+		<loc>https://volker-schuhmacher.net/credits.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-08-11</lastmod>
 	</url>
 </urlset>
