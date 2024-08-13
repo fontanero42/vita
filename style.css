@@ -49,8 +49,9 @@
 --clr-primary-400:hsl(228,39%,23%);
 
 --clr-neutral-900: hsl(232, 12%, 13%);
---clr-neutral-200: hsl(0 0% 97%);
---clr-neutral-100:hsl(0 0% 100%);
+--clr-neutral-400: hsl(232, 12%, 40%);
+--clr-neutral-200: hsl(0, 0%, 97%);
+--clr-neutral-100:hsl(0, 0%, 100%);
 
 --ff-primary:"Rubik", sans-serif;
 font-family:var(--ff-primary);
@@ -126,6 +127,9 @@ body {
   height: 100%;
 }
 
+dialog {
+  border-style: none;
+}
 /* Set core body defaults */
 
 /* A elements that don't have a class get default styles */
@@ -187,6 +191,9 @@ svg {
 .bg-neutral-100 {
   background-color: var(--clr-neutral-100);
 }
+.bg-neutral-400 {
+  background-color: var(--clr-neutral-400);
+}
 .bg-neutral-900 {
   background-color: var(--clr-neutral-900);
 }
@@ -234,10 +241,13 @@ svg {
   padding-bottom: var(--size-400);
 }
 
+.margin-bottom-400 {
+  margin-block-end: var(--size-400);
+}
+
 .margin-bottom-700 {
   margin-block-end: var(--size-700);
 }
-
 
 /* general styling */
 
@@ -372,7 +382,7 @@ h4{
   }
 }
 
-/* footer navigation */
+/* footer  navigation */
 
 .footer-nav {
   columns: 4;
@@ -382,15 +392,16 @@ h4{
 .footer-nav a {
   color: var(--clr-neutral-100);
   text-decoration: none;
-}
+}       
+
 
 .footer-nav a:is(:hover, :focus) {
   color: var(--clr-accent-400);
 }
 
 .primary-footer-social a:is(:hover, :focus) {
- background-color: var(--clr-accent-400);
-}
+  background-color: var(--clr-accent-400);
+ }
 
 @media (max-width: 50em) {
   .footer-nav   {
@@ -398,3 +409,106 @@ h4{
   }
   
 }
+
+/* modal navigation */
+
+.modal-footer{
+  display: grid;
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-neutral-100);
+  gap: var(--size-400);
+  grid-template-areas:
+    "nav"
+    "copy";
+
+}
+
+.modal-nav {
+  columns: 2;
+  gap: clamp(var(--size-200), 30vw, var(--size-900));
+  grid-area: nav;
+  margin: 0 1em 0 1em; 
+  }
+
+.modal-nav a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}       
+
+.modal-nav a:is(:hover, :focus) {
+  color: var(--clr-accent-400);
+}
+
+.modal-copy{
+  grid-area: copy;
+  margin: 0 1em 0 1em; 
+
+}
+
+@media (max-width: 50em) {
+  .modal-nav   {
+    columns: 1;
+  }
+  
+}
+
+
+/* diAalog */
+.modal {
+  display: flex; 
+  justify-content: center;
+  align-items: center  ;
+  margin: var(--size-900);
+  padding: var(--size-500);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500); 
+ }
+ 
+ dialog::backdrop {
+   /* background-color: var(--clr-accent-100);*/  
+   backdrop-filter: blur(5px);
+ }
+ 
+ dialog:not([open]) {
+   display: none;
+ }
+ 
+/* button */
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100vmax;
+  padding: 1.25em 2.5em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
+}
+
+.button[data-type="inverted"] {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-400);
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--clr-accent-300);
+}
+
+.button[data-type="inverted"]:hover,
+.button[data-type="inverted"]:focus-visible {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-300);
+}
+
+
