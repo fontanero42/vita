@@ -28,7 +28,10 @@
       <div>
         <p class="margin-bottom-400">Diese Seite verwendet Cookies. Wenn Sie auf der Seite weitersurfen, erklären Sie sich mit der Verwendung von Cookies einverstanden.</p>
         <div class="button-container margin-bottom-400">
+          <div></div>
         <button data-modal-accept class="button">Alles akzeptieren</button>
+        <button data-modal-deny class="button">Alles ablehnen</button>
+        <div></div>
       </div>
         <div class="modal-footer |  padding-block-400">
           <nav class="modal-nav">
@@ -140,5 +143,28 @@
   </footer>
 </body>
 <script src="app.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    // Define dataLayer and the gtag function.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
 
+    // Default ad_storage to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'personalization_storage': 'denied',
+      'functionality_storage': 'denied',
+      'security_storage': 'denied',
+    });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9XWL9NDKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-Y9XWL9NDKD'); 
+  </script>
 </html>

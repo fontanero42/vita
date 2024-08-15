@@ -76,7 +76,7 @@ font-optical-sizing: auto;
 --fs-primary-heading:var(--fs-800);
 --fs-secondary-heading:var(--fs-700);
 --fs-nav:var(--fs-500);
---fs-button:var(--fs-500);
+--fs-button:var(--fs-300);
 
 --size-100: 0.25rem;
 --size-200: 0.5rem;
@@ -94,7 +94,7 @@ font-optical-sizing: auto;
     --fs-body:var(--fs-500);
     --fs-primary-heading:var(--fs-800);
     --fs-secondary-heading:var(--fs-700);
-    --fs-nav:var(--fs-500);
+    --fs-nav:var(--fs-300);
   }
 }
 /* Box sizing rules */
@@ -464,7 +464,6 @@ h4{
  }
  
  dialog::backdrop {
-   /* background-color: var(--clr-accent-100);*/  
    backdrop-filter: blur(5px);
  }
  
@@ -475,9 +474,17 @@ h4{
 /* button */
 
 .button-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 2fr 1fr 1fr 2fr ;
+}
+
+@media (max-width: 50em) {
+  .button-container   {
+    columns: 1;
+    grid-template-columns: auto;
+  }
+  
 }
 
 .button {
@@ -509,6 +516,10 @@ h4{
 .button[data-type="inverted"]:focus-visible {
   background-color: var(--clr-neutral-100);
   color: var(--clr-accent-300);
+}
+
+.button[data-shadow="none"] {
+  box-shadow: none;
 }
 
 
