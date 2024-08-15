@@ -27,7 +27,7 @@ window.onload = () => {
 
   const modal = document.querySelector("[data-modal]");
 
-  modal.showModal();
+  if(shouldShowModal()) modal.showModal();
 
   acceptBtn.addEventListener("click", () => {
     saveToStorage(storageType);
