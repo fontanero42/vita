@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passwort Generator</title>
+  <meta name="description" content="Volker Schuhmacher in Duisburg">
+  <meta name="author" content="fontanero management systems">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="primary-header-wrapper">
+        <div class="mark">Generator</div>
+      </div>
+      <h1 class="fs-primary-heading">Starkes Passwort für Ihr System</h1>
+
+    </div>
+  </header>
+  <div class="container padding-block-400">
+       <label for="length-select">Choose a length:</label>
+
+<select name="length" id="length-select">
+  <option value="">--Bitte-auswählen----</option>
+  <option value="8">acht</option>
+  <option value="9">neun</option>
+  <option value="10">zehn</option>
+  <option value="11">elf</option>
+  <option value="12">zwölf</option>
+  <option value="16">sechzehn</option>
+
+</select>
+ <button generate class="button">generieren</button>
+    <div class="pwcanvas">
+      <div class="pwcell">
+        <div class="pwchar is-major">T</div>
+        <div class="pwseq">1.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar">p</div>
+        <div class="pwseq">2.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar">a</div>
+        <div class="pwseq">3.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar">r</div>
+        <div class="pwseq">4.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar is-number">2</div>
+        <div class="pwseq">5.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar">x</div>
+        <div class="pwseq">6.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar is-number">1</div>
+        <div class="pwseq">7.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar is-number">7</div>
+        <div class="pwseq">8.</div>
+      </div>
+      <div class="pwcell">
+        <div class="pwchar is-special">&amp</div>
+        <div class="pwseq">9.</div>
+      </div>
+    </div>
+  </div>
+  <footer class="primary-footer | padding-block-400 bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="primary-footer-wrapper">
+        <div class="primary-footer-nav">
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" target="_self">Services</a></li>
+              <li><a href="impressum.html" target="_self">Impressum</a></li>
+              <li><a href="datenschutz.html" target="_self">Datenschutz</a></li>
+              <li><a href="credits.html" target="_self">Credits</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="primary-footer-form">
+          <p>&copy; Volker Schuhmacher 2025</p>
+        </div>
+        <div class="primary-footer-social">
+          <a href="https://www.linkedin.com/in/volker-schuhmacher-1263802b9/" target="_blank">
+            <img src="In-White-14@2x.png" alt="linkedin logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+<script src="pwapp.js"></script>     
+
+</html>
