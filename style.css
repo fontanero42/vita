@@ -39,6 +39,23 @@
   font-weight: 800;
   src: url('./fonts/rubik-v28-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* alegreya-sans-sc-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/alegreya-sans-sc-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* alegreya-sans-sc-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/alegreya-sans-sc-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
 --clr-accent-500: hsl(12, 60%, 45%);
 --clr-accent-400: hsl(27, 88%, 53%);
@@ -54,12 +71,13 @@
 --clr-neutral-100:hsl(0, 0%, 100%);
 
 --ff-primary:"Rubik", sans-serif;
+--ff-secondary:"Alegreya Sans SC", sans-serif;
 font-family:var(--ff-primary);
 font-style:normal;
 font-optical-sizing: auto;
 --ff-body: var(--ff-primary);
 --ff-heading:var(--ff-primary);
-
+--ff-nav:var(--ff-secondary);
 --fw-regular: 500;
 --fw-semibold:600;
 --fw-bold:700;
@@ -362,7 +380,6 @@ ul {
   flex-direction: column;         
   background-color: #074f57;
   background-image: url("/img/keyboard.webp");
-  /*background-repeat: no-repeat;*/
   background-size: cover;
   color: white;
   font-size: var(--fs-hero);
@@ -519,8 +536,9 @@ h4{
 .footer-nav {
   columns: 4;
   gap: clamp(var(--size-200), 30vw, var(--size-900));
-  font-size: var(--fs-500);
+  font-size: var(--fs-700);
   font-weight: var(--fw-semibold);
+  font-family: var(--ff-secondary);
 }
 
 .footer-nav a {
